@@ -16,6 +16,7 @@
 # @raycast.author Sky Jia
 # @raycast.authorURL https://github.com/skyjia/raycast-script-commands
 
+# check if surge-cli is installed
 if ! command -v surge-cli &> /dev/null; then
   echo "surge-cli command is required (https://manual.nssurge.com/others/cli.html).";
   exit 1;

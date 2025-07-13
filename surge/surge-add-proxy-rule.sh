@@ -47,4 +47,7 @@ echo "$proxy_rule" >> "$tmp_file"
 sort -u "$tmp_file" -o "$tmp_file"
 mv "$tmp_file" "$proxy_file"
 
+# reload profile
+surge-cli reload
+
 echo "Added a new proxy rule: $proxy_rule"
